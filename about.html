@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - Petit Girard</title>
+
+<style>
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f8fafc;
+}
+
+/* NAVBAR */
+.nav {
+    background: blue;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.logo {
+    width: 40px;
+}
+
+/* HERO */
+.hero {
+    background: url("images/cover.jpg");
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* CONTENT */
+.container {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* TITLES */
+h2 {
+    color: #1e293b;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .hero {
+        height: 200px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="nav">
+    <img src="images/logo.jpg" class="logo">
+    <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    About Petit Girard
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+
+    <div class="card">
+        <h2>من نحن</h2>
+        <p>
+            حضانة Petit Girard هي مكان آمن ومحب للأطفال، نهدف إلى تنمية مهاراتهم
+            التعليمية والاجتماعية من خلال أنشطة ممتعة وتفاعلية.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>رؤيتنا</h2>
+        <p>
+            نسعى لتوفير بيئة تعليمية حديثة تساعد الأطفال على الإبداع
+            وبناء شخصية قوية منذ الصغر.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>خدماتنا</h2>
+        <p>
+            - تعليم أساسي مبسط  
+            - أنشطة فنية وترفيهية  
+            - رعاية كاملة للأطفال  
+            - تنمية مهارات التواصل  
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
