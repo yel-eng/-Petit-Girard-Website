@@ -50,6 +50,38 @@ body {
     margin-left: 10px;
 }
 
+    .nav {
+    background: blue;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* الجزء الشمال (لوجو + عنوان) */
+.nav .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* الجزء اليمين (اللينكات) */
+.nav .right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav h2 {
+    margin: 0;
+}
+
 /* ================= HERO ================= */
 .hero {
     margin-top: 20px;
@@ -144,15 +176,19 @@ body {
 
 <!-- NAVBAR -->
 <div class="nav">
-    <img src="images/logo.jpg" alt="logo" class="logo">
-    <h2>Petit Girard</h2>
 
-    <div>
+    <div class="left">
+        <img src="images/logo.jpg" class="logo">
+        <h2>Petit Girard</h2>
+    </div>
+
+    <div class="right">
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Gallery</a>
         <a href="#">Contact</a>
     </div>
+
 </div>
 
 <!-- HERO -->
