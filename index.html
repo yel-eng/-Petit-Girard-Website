@@ -159,30 +159,74 @@ body {
 /* ================= MOBILE ================= */
 @media (max-width: 600px) {
 
-    .hero {
-        font-size: 18px;
-        height: 300px;
-    }
-
-    .logo {
-        width: 35px;
-        height: 35px;
-    }
-
-    h2 {
-        font-size: 18px;
-    }
-
+    /* TOP BAR */
     .top-bar {
         flex-direction: column;
         text-align: center;
         gap: 5px;
+        font-size: 12px;
     }
 
+    /* NAVBAR */
     .nav {
         flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .nav .right {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 10px;
     }
+
+    .nav a {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    /* LOGO + TITLE */
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    /* HERO */
+    .hero {
+        height: 250px;
+        font-size: 18px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* SECTIONS */
+    .section {
+        padding: 20px;
+    }
+
+    .section p {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    /* GALLERY */
+    .gallery img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* CONTACT */
+    .contact {
+        padding: 20px;
+        font-size: 14px;
+    }
+}
 }
 
 </style>
