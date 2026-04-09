@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery - Petit Girard</title>
+
+<style>
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f8fafc;
+}
+
+/* NAVBAR */
+.nav {
+    background: blue;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.logo {
+    width: 40px;
+}
+
+/* HERO */
+.hero {
+    background: url("images/cover.jpg");
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* SECTION */
+.container {
+    padding: 40px;
+}
+
+/* TEXT */
+.text-box {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* IMAGES */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* VIDEOS */
+.videos {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.videos video {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .gallery img,
+    .videos video {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="nav">
+    <img src="images/logo.jpg" class="logo">
+    <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+    Our Activities
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+
+    <!-- TEXT -->
+    <div class="text-box">
+        <p>
+            بعض من أنشطة الأطفال داخل الحضانة، حيث نحرص على التعلم من خلال اللعب
+            وتنمية المهارات بطريقة ممتعة.
+        </p>
+    </div>
+
+    <!-- IMAGES -->
+    <div class="gallery">
+        <img src="images/1.jpg">
+        <img src="images/2.jpg">
+        <img src="images/3.jpg">
+    </div>
+
+    <!-- VIDEOS -->
+    <div class="videos">
+        <video controls>
+            <source src="videos/1.mp4" type="video/mp4">
+        </video>
+
+        <video controls>
+            <source src="videos/2.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</div>
+
+</body>
+</html>
