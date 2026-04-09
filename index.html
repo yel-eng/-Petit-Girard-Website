@@ -5,29 +5,16 @@
 <title>Petit Girard Nursery</title>
 
 <style>
+
 body {
     font-family: Arial;
     margin: 0;
     background: #f8fafc;
 }
 
-/* Navbar */
-.nav {
-    background: blue;
-    color: white;
-    padding: 15px;
-    
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-}
- .top-bar {
-    background: #6b7280; /* رصاصي */
+/* ================= TOP BAR ================= */
+.top-bar {
+    background: #6b7280;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -40,17 +27,34 @@ body {
     display: flex;
     gap: 10px;
     align-items: center;
-}   
+}
+
+/* ================= NAVBAR ================= */
+.nav {
+    background: blue;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
 .nav h2 {
     margin: 0;
     margin-left: 10px;
 }
-/* Hero */
+
+/* ================= HERO ================= */
 .hero {
     margin-top: 20px;
-    margin-left: 20px;
     background: url("images/cover.jpg");
-    height: 1000px;
+    height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -61,13 +65,13 @@ body {
     font-size: 30px;
 }
 
-/* Sections */
+/* ================= SECTIONS ================= */
 .section {
     padding: 40px;
     text-align: center;
 }
 
-/* Gallery */
+/* ================= GALLERY ================= */
 .gallery {
     display: flex;
     gap: 10px;
@@ -80,30 +84,25 @@ body {
     border-radius: 10px;
 }
 
-/* Contact */
+/* ================= CONTACT ================= */
 .contact {
     background: #0f172a;
     color: white;
     padding: 30px;
 }
-    
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-}
 
+/* ================= LOGO ================= */
 .logo {
     width: 50px;
     height: 50px;
 }
-  @media (max-width: 600px) {
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px) {
 
     .hero {
         font-size: 18px;
-        padding: 40px 10px;
+        height: 300px;
     }
 
     .logo {
@@ -121,11 +120,18 @@ body {
         gap: 5px;
     }
 
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
+
 </style>
 </head>
 
 <body>
+
+<!-- TOP BAR -->
 <div class="top-bar">
     <div class="left">
         📧 Petitgirard262@gmail.com | 📞 01000026780
@@ -135,10 +141,12 @@ body {
         🌐 Facebook | Instagram | WhatsApp
     </div>
 </div>
-<!-- Navbar -->
+
+<!-- NAVBAR -->
 <div class="nav">
     <img src="images/logo.jpg" alt="logo" class="logo">
     <h2>Petit Girard</h2>
+
     <div>
         <a href="#">Home</a>
         <a href="#">About</a>
@@ -147,21 +155,20 @@ body {
     </div>
 </div>
 
-<!-- Hero -->
+<!-- HERO -->
 <div class="hero">
-    
+    Welcome to Petit Girard Nursery
 </div>
 
-<!-- About -->
+<!-- ABOUT -->
 <div class="section">
     <h2>About Us</h2>
     <p>
-        حضانة Petit Girard توفر بيئة آمنة وتعليمية للأطفال لتنمية مهاراتهم
-        بطريقة ممتعة وتفاعلية.
+        حضانة Petit Girard توفر بيئة آمنة وتعليمية للأطفال لتنمية مهاراتهم بطريقة ممتعة وتفاعلية.
     </p>
 </div>
 
-<!-- Gallery -->
+<!-- GALLERY -->
 <div class="section">
     <h2>Gallery</h2>
     <div class="gallery">
@@ -171,7 +178,7 @@ body {
     </div>
 </div>
 
-<!-- Contact -->
+<!-- CONTACT -->
 <div class="contact">
     <h2>Contact Us</h2>
     <p>📍 262 Port Said St, Alexandria</p>
