@@ -226,7 +226,35 @@ body {
         padding: 20px;
         font-size: 14px;
     }
-}
+/* موبايل */
+@media (max-width: 600px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+    }
+
+    .nav .right {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        background: blue;
+        margin-top: 10px;
+    }
+
+    .nav .right a {
+        padding: 10px;
+        border-top: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .nav .right.show {
+        display: flex;
+    }
+}}
 }
 
 </style>
