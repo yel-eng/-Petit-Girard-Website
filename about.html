@@ -43,7 +43,7 @@ body {
     .top-bar a:hover {
     color: #ddd;
 }
-/* NAVBAR */
+/* ================= NAVBAR ================= */
 .nav {
     background: blue;
     color: white;
@@ -56,12 +56,46 @@ body {
 .nav a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
-.logo {
-    width: 40px;
+.nav h2 {
+    margin: 0;
+    margin-left: 10px;
 }
+
+    .nav {
+    background: blue;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* الجزء الشمال (لوجو + عنوان) */
+.nav .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* الجزء اليمين (اللينكات) */
+.nav .right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav h2 {
+    margin: 0;
+}
+
 
 /* HERO */
 .hero {
