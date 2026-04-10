@@ -12,6 +12,21 @@ body {
     background: #f8fafc;
 }
 
+/* TOP BAR */
+.top-bar {
+    background: #6b7280;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 20px;
+    font-size: 14px;
+}
+
+.top-bar a {
+    color: white;
+    text-decoration: none;
+}
+
 /* NAVBAR */
 .nav {
     background: blue;
@@ -22,14 +37,24 @@ body {
     align-items: center;
 }
 
+.nav .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav .right {
+    display: flex;
+    gap: 20px;
+}
+
 .nav a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
 }
 
 .logo {
-    width: 40px;
+    width: 50px;
 }
 
 /* HERO */
@@ -37,16 +62,14 @@ body {
     background: url("images/cover.jpg");
     height: 250px;
     background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     font-size: 28px;
-    font-weight: bold;
 }
 
-/* SECTION */
+/* CONTENT */
 .container {
     padding: 40px;
 }
@@ -60,7 +83,6 @@ body {
     border-radius: 12px;
     text-align: center;
     margin-bottom: 30px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 /* IMAGES */
@@ -87,15 +109,17 @@ body {
 
 .videos video {
     width: 300px;
-    border-radius: 10px;
 }
 
 /* MOBILE */
 @media (max-width: 600px) {
+    .nav {
+        flex-direction: column;
+    }
+
     .gallery img,
     .videos video {
         width: 100%;
-        max-width: 300px;
     }
 }
 </style>
@@ -103,51 +127,54 @@ body {
 
 <body>
 
-<!-- NAVBAR -->
-<div class="nav"> 
-    <div class="left">
-        <img src="images/logo.jpg" class="logo"> 
-        <h2>Petit Girard</h2> 
+<!-- TOP BAR -->
+<div class="top-bar">
+    <div>
+        📧 Petitgirard262@gmail.com | 📞 01000026780
     </div>
-    <div class="right"> 
-       <a href="index.html">Home</a>
+    <div>
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+    </div>
+</div>
+
+<!-- NAVBAR -->
+<div class="nav">
+    <div class="left">
+        <img src="images/logo.jpg" class="logo">
+        <h2>Petit Girard</h2>
+    </div>
+
+    <div class="right">
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="gallery.html">Gallery</a>
-        <a href="Contact.html">Contact</a> 
-    </div> 
+        <a href="contact.html">Contact</a>
+    </div>
 </div>
 
 <!-- HERO -->
-<div class="hero">
-    Our Activities
-</div>
+<div class="hero">Our Activities</div>
 
-<!-- CONTENT -->
 <div class="container">
 
-    <!-- TEXT -->
     <div class="text-box">
-        <p>
-            بعض من أنشطة الأطفال داخل الحضانة، حيث نحرص على التعلم من خلال اللعب
-            وتنمية المهارات بطريقة ممتعة.
-        </p>
+        بعض من أنشطة الأطفال داخل الحضانة
     </div>
 
-    <!-- IMAGES -->
     <div class="gallery">
         <img src="images/1.jpg">
         <img src="images/2.jpg">
         <img src="images/3.jpg">
     </div>
 
-    <!-- VIDEOS -->
     <div class="videos">
         <video controls>
-            <source src="videos/1.mp4" type="video/mp4">
+            <source src="videos/1.mp4">
         </video>
 
         <video controls>
-            <source src="videos/2.mp4" type="video/mp4">
+            <source src="videos/2.mp4">
         </video>
     </div>
 
