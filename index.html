@@ -3,16 +3,50 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About - Petit Girard</title>
+<title>Petit Girard Nursery</title>
 
 <style>
+
 body {
     font-family: Arial;
     margin: 0;
     background: #f8fafc;
 }
 
-/* NAVBAR */
+/* ================= TOP BAR ================= */
+.top-bar {
+    background: #6b7280;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 20px;
+    font-size: 14px;
+}
+
+.top-bar .left,
+.top-bar .right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+    .top-bar a {
+    color: white;
+    text-decoration: none;
+}
+    .top-bar a:link,
+.top-bar a:visited,
+
+.top-bar a:active {
+    color: white;
+    text-decoration: none;
+}
+
+    .top-bar a:hover {
+    color: #ddd;
+}
+
+/* ================= NAVBAR ================= */
 .nav {
     background: blue;
     color: white;
@@ -25,110 +59,280 @@ body {
 .nav a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
-.logo {
-    width: 40px;
+.nav h2 {
+    margin: 0;
+    margin-left: 10px;
 }
 
-/* HERO */
+    .nav {
+    background: blue;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* الجزء الشمال (لوجو + عنوان) */
+.nav .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* الجزء اليمين (اللينكات) */
+.nav .right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav h2 {
+    margin: 0;
+}
+
+/* ================= HERO ================= */
 .hero {
+    margin-top: 20px;
     background: url("images/cover.jpg");
-    height: 300px;
+    height: 500px;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    font-size: 28px;
-    font-weight: bold;
+    color: #0f172a;
+    font-size: 30px;
 }
 
-/* CONTENT */
-.container {
+/* ================= SECTIONS ================= */
+.section {
     padding: 40px;
-    max-width: 900px;
-    margin: auto;
+    text-align: center;
 }
 
-.card {
+/* ================= GALLERY ================= */
+.gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+/* ================= CONTACT ================= */
+.contact {
+    background: #0f172a;
+    color: white;
+    padding: 30px;
+}
+
+/* ================= LOGO ================= */
+.logo {
+    width: 50px;
+    height: 50px;
+}
+    .section p {
+    max-width: 700px;
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #334155;
     background: white;
-    padding: 25px;
-    border-radius: 15px;
-    margin-bottom: 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* TITLES */
-h2 {
-    color: #1e293b;
-}
-
-/* MOBILE */
+/* ================= MOBILE ================= */
 @media (max-width: 600px) {
-    .hero {
-        height: 200px;
-        font-size: 20px;
+
+    /* TOP BAR */
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+        font-size: 12px;
+    }
+
+    /* NAVBAR */
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
         text-align: center;
     }
 
-    .container {
+    .nav .right {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav a {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    /* LOGO + TITLE */
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    /* HERO */
+    .hero {
+        height: 250px;
+        font-size: 18px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* SECTIONS */
+    .section {
         padding: 20px;
     }
+
+    .section p {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    /* GALLERY */
+    .gallery img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* CONTACT */
+    .contact {
+        padding: 20px;
+        font-size: 14px;
+    }
+/* موبايل */
+@media (max-width: 600px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+    }
+
+    .nav .right {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        background: blue;
+        margin-top: 10px;
+    }
+
+    .nav .right a {
+        padding: 10px;
+        border-top: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .nav .right.show {
+        display: flex;
+    }
+}}
 }
+
 </style>
 </head>
 
 <body>
 
+<!-- TOP BAR -->
+<div class="top-bar">
+
+    <div class="left">
+        <a href="mailto:Petitgirard262@gmail.com">📧 Petitgirard262@gmail.com</a> |
+        <a href="tel:01000026780">📞 01000026780</a>
+    </div>
+
+    <div class="right">
+        <a href="https://www.facebook.com/petitgirard.edu/followers?locale=ar_AR" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/petit_girard120/" target="_blank">Instagram</a>
+        <a href="https://wa.me/2010000026780" target="_blank">WhatsApp</a>
+    </div>
+
+</div>
+
 <!-- NAVBAR -->
-<div class="nav">
-    <img src="images/logo.jpg" class="logo">
-    <div>
-        <a href="index.html">Home</a>
+    <div class="nav">
+
+    <div class="left">
+        <img src="images/logo.jpg" class="logo">
+        <h2>Petit Girard</h2>
+    </div>
+
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+    <div class="right" id="menu">
+        <a href="#">Home</a>
         <a href="about.html">About</a>
         <a href="gallery.html">Gallery</a>
-        <a href="Contact.html">Contact</a>
+        <a href="#">Contact</a>
     </div>
+
 </div>
 
+</div>
 <!-- HERO -->
 <div class="hero">
-    About Petit Girard
 </div>
 
-<!-- CONTENT -->
-<div class="container">
 
-    <div class="card">
-        <h2>من نحن</h2>
-        <p>
-            حضانة Petit Girard هي مكان آمن ومحب للأطفال، نهدف إلى تنمية مهاراتهم
-            التعليمية والاجتماعية من خلال أنشطة ممتعة وتفاعلية.
-        </p>
-    </div>
-
-    <div class="card">
-        <h2>رؤيتنا</h2>
-        <p>
-            نسعى لتوفير بيئة تعليمية حديثة تساعد الأطفال على الإبداع
-            وبناء شخصية قوية منذ الصغر.
-        </p>
-    </div>
-
-    <div class="card">
-        <h2>خدماتنا</h2>
-        <p>
-            - تعليم أساسي مبسط  
-            - أنشطة فنية وترفيهية  
-            - رعاية كاملة للأطفال  
-            - تنمية مهارات التواصل  
-        </p>
-    </div>
-
+<!-- ABOUT -->
+<div class="section">
+   
+    <p>
+          بيئة آمنة وتعليمية للأطفال لتنمية مهاراتهم بطريقة ممتعة وتفاعلية.
+    </p>
 </div>
 
+<!-- GALLERY -->
+<div class="section">
+    
+    <div class="gallery">
+        <img src="images/1.jpg">
+        <img src="images/2.jpg">
+        <img src="images/3.jpg">
+    </div>
+</div>
+
+<!-- CONTACT -->
+<div class="contact">
+    <h2>Contact Us</h2>
+    <p>📍 262 Port Said St, Alexandria</p>
+    <p>📞 01000026780</p>
+    <p>📧 Petitgirard262@gmail.com</p>
+</div>
+<script>
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show");
+}
+</script>
 </body>
 </html>
