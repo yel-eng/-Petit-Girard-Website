@@ -6,11 +6,13 @@
 <title>About - Petit Girard</title>
 
 <style>
+
 body {
     font-family: Arial;
     margin: 0;
     background: #f8fafc;
 }
+
 /* ================= TOP BAR ================= */
 .top-bar {
     background: #6b7280;
@@ -28,21 +30,15 @@ body {
     align-items: center;
 }
 
-    .top-bar a {
-    color: white;
-    text-decoration: none;
-}
-    .top-bar a:link,
-.top-bar a:visited,
-
-.top-bar a:active {
+.top-bar a {
     color: white;
     text-decoration: none;
 }
 
-    .top-bar a:hover {
+.top-bar a:hover {
     color: #ddd;
 }
+
 /* ================= NAVBAR ================= */
 .nav {
     background: blue;
@@ -53,34 +49,12 @@ body {
     align-items: center;
 }
 
-.nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-}
-
-.nav h2 {
-    margin: 0;
-    margin-left: 10px;
-}
-
-    .nav {
-    background: blue;
-    color: white;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* الجزء الشمال (لوجو + عنوان) */
 .nav .left {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-/* الجزء اليمين (اللينكات) */
 .nav .right {
     display: flex;
     align-items: center;
@@ -92,12 +66,21 @@ body {
     text-decoration: none;
 }
 
-.nav h2 {
-    margin: 0;
+/* ✅ حل مشكلة اللوجو */
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
 }
 
+/* زر المينيو */
+.menu-btn {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
 
-/* HERO */
+/* ================= HERO ================= */
 .hero {
     background: url("images/cover.jpg");
     height: 300px;
@@ -111,7 +94,7 @@ body {
     font-weight: bold;
 }
 
-/* CONTENT */
+/* ================= CONTENT ================= */
 .container {
     padding: 40px;
     max-width: 900px;
@@ -126,13 +109,51 @@ body {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* TITLES */
 h2 {
     color: #1e293b;
 }
 
-/* MOBILE */
+/* ================= MOBILE ================= */
 @media (max-width: 600px) {
+
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+        font-size: 12px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+    }
+
+    .nav .right {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        background: blue;
+        margin-top: 10px;
+    }
+
+    .nav .right a {
+        padding: 10px;
+        border-top: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .nav .right.show {
+        display: flex;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
     .hero {
         height: 200px;
         font-size: 20px;
@@ -143,6 +164,7 @@ h2 {
         padding: 20px;
     }
 }
+
 </style>
 </head>
 
@@ -150,7 +172,6 @@ h2 {
 
 <!-- TOP BAR -->
 <div class="top-bar">
-
     <div class="left">
         <a href="mailto:Petitgirard262@gmail.com">📧 Petitgirard262@gmail.com</a> |
         <a href="tel:01000026780">📞 01000026780</a>
@@ -161,10 +182,10 @@ h2 {
         <a href="https://www.instagram.com/petit_girard120/" target="_blank">Instagram</a>
         <a href="https://wa.me/2010000026780" target="_blank">WhatsApp</a>
     </div>
-
 </div>
+
 <!-- NAVBAR -->
-    <div class="nav">
+<div class="nav">
 
     <div class="left">
         <img src="images/logo.jpg" class="logo">
@@ -174,7 +195,7 @@ h2 {
     <div class="menu-btn" onclick="toggleMenu()">☰</div>
 
     <div class="right" id="menu">
-        <a href="#">Home</a>
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="gallery.html">Gallery</a>
         <a href="#">Contact</a>
@@ -217,6 +238,12 @@ h2 {
     </div>
 
 </div>
+
+<script>
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show");
+}
+</script>
 
 </body>
 </html>
