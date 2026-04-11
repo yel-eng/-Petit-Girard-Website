@@ -121,64 +121,62 @@ body {
     font-size: 30px;
 }
     
-    /* ================= CONTENT ================= */ 
-    .container { padding: 40px; 
-                max-width: 900px; 
-                margin: auto; } 
-    
-    .card { background: white;
-           padding: 25px; 
-           border-radius: 15px; 
-           margin-bottom: 20px; 
-           box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-    
-     h2
-       { color: #1e293b; }
+ /* ================= CONTACT ================= */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px;
+}
 
-    /* ================= MOBILE ================= */ 
-    @media (max-width: 600px) 
-    { .top-bar 
-     { flex-direction: column; 
-      text-align: center;
-      gap: 5px;
-      font-size: 12px; } 
-     
-     .menu-btn
-           { display: block; } 
-     
-     .nav 
-          { flex-wrap: wrap; } 
-     
-     .nav .right  
-              { display: none; width: 100%;
-                  flex-direction: column;
-                  text-align: center;
-                  background: blue;
-                  margin-top: 10px;
-              } 
-     
-     .nav .right a 
-     { padding: 10px; 
-      border-top: 1px solid rgba(255,255,255,0.2);
-     } 
-     .nav .right.show {
-         display: flex; 
-          } 
-     .logo {
-         width: 40px; 
-         height: 40px; 
-     }
-     
-     .hero {
-         height: 200px; 
-         font-size: 20px;
-         text-align: center; 
-     } 
-     
-     .container { 
-         padding: 20px; 
-     } 
-    }
+.form-box {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.form-box input,
+.form-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.form-box button {
+    background: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+.info-box {
+    flex: 1;
+    background: #0f172a;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* ================= MAP ================= */
+.map {
+    padding: 40px;
+}
+
+.gps-btn {
+    display: inline-block;
+    margin-top: 15px;
+    background: green;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
 /* ================= MOBILE ================= */
 @media (max-width: 600px) {
 
@@ -215,9 +213,13 @@ body {
         display: flex;
     }
 
-    .logo {
-        width: 40px;
-        height: 40px;
+    .hero {
+        height: 250px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        padding: 20px;
     }
 }
 
