@@ -1,0 +1,272 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f8fafc;
+}
+
+/* ================= TOP BAR ================= */
+.top-bar {
+    background: #6b7280;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 20px;
+    font-size: 14px;
+}
+
+.top-bar .left,
+.top-bar .right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+    .top-bar a {
+    color: white;
+    text-decoration: none;
+}
+    .top-bar a:link,
+.top-bar a:visited,
+
+.top-bar a:active {
+    color: white;
+    text-decoration: none;
+}
+
+    .top-bar a:hover {
+    color: #ddd;
+}
+
+/* ================= NAVBAR ================= */
+.nav {
+    background: blue;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* الجزء الشمال (لوجو + عنوان) */
+.nav .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* الجزء اليمين (اللينكات) */
+.nav .right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}  
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.nav h2 {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+    
+    .nav {
+    background: blue;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav h2 {
+    margin: 0;
+}
+    h2 {
+    color: #1e293b;
+}
+
+/* ================= HERO ================= */
+.hero {
+    background: url("images/cover.jpg");
+    margin-top: 20px;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0f172a;
+    font-size: 30px;
+}
+    
+    /* ================= MENU BUTTON ================= */
+.menu-btn {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+</style>
+
+<body>
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Petit Girard</title>
+
+<style>
+
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f8fafc;
+}
+
+/* NAVBAR */
+.nav {
+    background: #0f172a;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("images/cover.jpg");
+    height: 250px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+}
+
+/* CONTACT SECTION */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 30px;
+}
+
+/* FORM */
+.form-box {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.form-box input,
+.form-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.form-box button {
+    background: #0f172a;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* INFO */
+.info-box {
+    flex: 1;
+    background: #0f172a;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.info-box h3 {
+    margin-top: 0;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="nav">
+    <h2>Petit Girard</h2>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</div>
+
+<!-- HEADER -->
+<div class="header">
+    Contact Us
+</div>
+
+<!-- CONTACT -->
+<div class="contact-container">
+
+    <!-- FORM -->
+    <div class="form-box">
+        <h2>Send Message</h2>
+        <form action="https://formspree.io/f/mzdkwdaj" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <!-- INFO -->
+    <div class="info-box">
+        <h3>Contact Info</h3>
+        <p>📍 262 Port Said St, Cleopatra, Alexandria</p>
+        <p>📞 01000026780</p>
+        <p>📞 01222286668</p>
+        <p>☎️ 03 5421792</p>
+        <p>📧 Petitgirard262@gmail.com</p>
+        <p>🕒 Open from 7 AM to 11 PM</p>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
