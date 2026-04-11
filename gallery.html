@@ -12,7 +12,7 @@ body {
     background: #f8fafc;
 }
 
-/* TOP BAR */
+/* ================= TOP BAR ================= */
 .top-bar {
     background: #6b7280;
     color: white;
@@ -22,12 +22,30 @@ body {
     font-size: 14px;
 }
 
-.top-bar a {
+.top-bar .left,
+.top-bar .right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+    .top-bar a {
+    color: white;
+    text-decoration: none;
+}
+    .top-bar a:link,
+.top-bar a:visited,
+
+.top-bar a:active {
     color: white;
     text-decoration: none;
 }
 
-/* NAVBAR */
+    .top-bar a:hover {
+    color: #ddd;
+}
+
+/* ================= NAVBAR ================= */
 .nav {
     background: blue;
     color: white;
@@ -37,15 +55,42 @@ body {
     align-items: center;
 }
 
+/* الجزء الشمال (لوجو + عنوان) */
 .nav .left {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-
+/* الجزء اليمين (اللينكات) */
 .nav .right {
     display: flex;
+    align-items: center;
     gap: 20px;
+}  
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.nav h2 {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+    
+    .nav {
+    background: blue;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav a {
@@ -53,20 +98,34 @@ body {
     text-decoration: none;
 }
 
-.logo {
-    width: 50px;
+.nav h2 {
+    margin: 0;
+}
+    h2 {
+    color: #1e293b;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 .hero {
     background: url("images/cover.jpg");
-    height: 250px;
+    margin-top: 20px;
+    height: 500px;
+    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    font-size: 28px;
+    color: #0f172a;
+    font-size: 30px;
+}
+    
+    /* ================= MENU BUTTON ================= */
+.menu-btn {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
 }
 
 /* CONTENT */
